@@ -16,5 +16,8 @@ func SumAll(numbersToSum ...[]int) (sums []int) {
 		sums[i] = Sum(numbers)
 	}
 
+	// get runtime error because out of capacity
+	// sums[10] = 16
+
 	return sums
 }
